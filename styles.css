@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url(./images/hobbiton.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-color: #2852de;
+}
+

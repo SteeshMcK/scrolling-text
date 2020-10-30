@@ -1,4 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
+
+/* RESET */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Page Styles */
 
 html, body {
     margin: 0;
@@ -12,25 +39,40 @@ body {
     background-size: cover;
     background-color: #2852de;
     overflow: hidden; /* text that goes off the browser will be hidden */
-    font-family: 'Dawning of a New Day', cursive;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #ffffdf;
+    margin: 45% 0 0 0; /* Pushes the text 50% down the page */
+    position: relative;
+} 
+
+.audioDiv {
+    position: relative;
+    top: -645px;
 }
 
 .wrapper {
     display: flex; /* centers element on screen */
     height: 100%;
-    width: 65%;
+    width: 75%;
     margin: 0 auto;
+    perspective: 450px; 
 }
 
 .scroll-text {
-    font-size: 3vw; /* vw= viewport width making it responsive */
+    height: 100%;
+    font-size: 6vw; /* vw= viewport width making it responsive */
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 2em;
     text-align: justify;
     position: relative; /* later, will use top property to move up and down */
+    animation: scroll 100s linear forwards;
 }
 
 h1, h2 {
     text-align: center;
 }
 
+@keyframes scroll {
+    from { top: 0; transform: translateZ(0) rotateX(20deg) }
+    to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg) }
+}

@@ -46,8 +46,8 @@ body {
 } 
 
 .audioDiv {
-    position: relative;
-    top: -645px;
+    position: fixed;
+    top: 5px;
 }
 
 .wrapper {
@@ -65,7 +65,7 @@ body {
     line-height: 2em;
     text-align: justify;
     position: relative; /* later, will use top property to move up and down */
-    animation: scroll 100s linear forwards;
+    animation: scroll 120s linear forwards;
 }
 
 h1, h2 {

@@ -11,5 +11,26 @@ body {
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     background-color: #2852de;
+    overflow: hidden; /* text that goes off the browser will be hidden */
+    font-family: 'Dawning of a New Day', cursive;
+}
+
+.wrapper {
+    display: flex; /* centers element on screen */
+    height: 100%;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.scroll-text {
+    font-size: 3vw; /* vw= viewport width making it responsive */
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: justify;
+    position: relative; /* later, will use top property to move up and down */
+}
+
+h1, h2 {
+    text-align: center;
 }
 

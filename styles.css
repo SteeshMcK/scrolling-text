@@ -65,7 +65,7 @@ body {
     line-height: 2em;
     text-align: justify;
     position: relative; /* later, will use top property to move up and down */
-    animation: scroll 120s linear forwards;
+    animation: scroll 150s linear forwards;
 }
 
 h1, h2 {
